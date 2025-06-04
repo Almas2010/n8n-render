@@ -1,0 +1,11 @@
+FROM n8nio/n8n
+
+ENV GENERIC_TIMEZONE=Asia/Almaty
+ENV N8N_BASIC_AUTH_ACTIVE=true
+ENV N8N_BASIC_AUTH_USER=admin
+ENV N8N_BASIC_AUTH_PASSWORD=453912
+ENV WEBHOOK_URL=https://your-temporary-url.onrender.com
+
+EXPOSE 5678
+
+CMD ["n8n"]
